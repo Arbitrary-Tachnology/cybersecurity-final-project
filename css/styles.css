@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #7400b8;
+    --purple-blue: #6930c3;
+    --blue: #5e60ce;
+    --jean-blue: #5390d9;
+    --ltblue: #48bfe3;
+    --cyan-green: #72efdd;
+    --ltcyan-green: #80ffdb;
+    --yellow: #ffd700;
+    --dkyellow: #ffda03;
+}
+
+header {
+    background-color: var(--purple);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav {
+    display: flex; /* Flexbox activated */
+    justify-content: space-between; /* logo left nav right */
+    align-items: center; /* vertically centered */
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: ;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    background-color: var(--jean-blue);
+    color: var(--yellow);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color ease 0.5s;
+}
+
+.nav-links a:hover {
+    background-color: var(--ltblue);
+}
+
+#hero {
+    background-image: url(../images/images/threeGuardians.png);
+    background-size: auto 100%;
+    background-position: center;
+    min-height: 80vh;
+    font-family: ;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+/* Dark overlay on the hero image for text readability */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(116, 0, 184, 0.35)
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    padding: 15rem;
+}
+
+.sub-text {
+    background-color: var(--purple-blue);
+    max-width: 25rem;
+    border-radius: 0.75rem;
+    color: var(--ltcyan-green);
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    padding: 0.6rem 0;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    color: var(--yellow);
+    margin-bottom: 1.5rem;
+    background-color: var(--purple-blue);
+    padding: 0.3rem;
+    font-weight: 450;
+}
+
+.btn1 {
+    display: inline-block;
+    background-color: var(--ltblue);
+    color: var(--dkyellow);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 3px solid transparent;
+    transition: background-color ease 0.5s;
+    transition: border ease ease 0.5s;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    border: 3px double var(--ltblue);
+}
+
+.btn2 {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--dkyellow);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 3px double #eecffe;
+    transition: background-color ease 0.5s;
+    transition: border ease 0.5s;
+}
+
+.btn2:hover {
+    background-color: #eecffe; /* use this for all buttons */
+    border: 3px double transparent;
+}
