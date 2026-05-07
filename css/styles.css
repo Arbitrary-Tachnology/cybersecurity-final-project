@@ -5,15 +5,35 @@
 }
 
 :root {
-    --purple: #7400b8;
+    /* COLORS */
+    /*--purple: #7400b8;
     --purple-blue: #6930c3;
     --blue: #5e60ce;
-    --jean-blue: #5390d9;
-    --ltblue: #48bfe3;
-    --cyan-green: #72efdd;
-    --ltcyan-green: #80ffdb;
-    --yellow: #ffd700;
+    --ltpurple: #9146ff;
+    --yellow: #ffe135;
     --dkyellow: #ffda03;
+    --yellow2: #ff0;
+    --pink: #eecffe;
+    --dkpurple: #96c;
+    --lavender-shadow: #fba0e3;
+    --green: #225a2f;*/
+
+    --purple: #6b54a0;
+    --green: #a9d093;
+    --dkgrey: #40464b;
+    --blue: #225290;
+    --ltblue: #aad3dd;
+    --white: #e5e7e4;
+    --grey: #acb3aa;
+    --yellow: #d0ac0f;
+
+    /* FONTS */
+    --h1-3: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --subtext: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --p: 'Times New Roman', Times, serif;
+    --everything-else: ;
+    --logo: 'Courier New', Courier, monospace;
+    --btn: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -32,14 +52,15 @@ header {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: ;
+    font-family: var(--everything-else);
 }
 
 .nav-logo {
     font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--yellow);
+    font-weight: 800;
+    color: var(--ltblue);
     text-decoration: none;
+    font-family: var(--logo);
 }
 
 .nav-links {
@@ -49,22 +70,23 @@ header {
 }
 
 .nav-links a {
-    background-color: var(--jean-blue);
-    color: var(--yellow);
+    background-color: var(--pink);
+    color: var(--blue);
     padding: 0.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.79rem;
+    font-weight: 800;
+    font-family: var(--btn);
     transition: background-color ease 0.5s;
 }
 
 .nav-links a:hover {
-    background-color: var(--ltblue);
+    background-color: var(--lavender-shadow);
 }
 
 #hero {
-    background-image: url(../images/images/threeGuardians.png);
+    background-image: url(../images/images/cia2.png);
     background-size: auto 100%;
     background-position: center;
     min-height: 80vh;
@@ -82,7 +104,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(116, 0, 184, 0.35)
+    background: rgba(153, 102, 204, 0.35)
 }
 
 .hero-content {
@@ -96,10 +118,11 @@ header {
     background-color: var(--purple-blue);
     max-width: 25rem;
     border-radius: 0.75rem;
-    color: var(--ltcyan-green);
+    color: var(--yellow);
     text-align: center;
-    font-size: large;
+    font-size: 1.15rem;
     font-weight: 500;
+    font-family: var(--subtext);
     padding: 0.6rem 0;
     margin-bottom: 1rem;
 }
@@ -110,6 +133,7 @@ header {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     background-color: var(--blue);
     color: var(--yellow);
+    font-family: var(--h1-3);
 }
 
 .intro-text {
@@ -119,17 +143,19 @@ header {
     background-color: var(--purple-blue);
     padding: 0.3rem;
     font-weight: 450;
+    font-family: var(--p);
 }
 
 .btn1 {
     display: inline-block;
-    background-color: var(--ltblue);
-    color: var(--dkyellow);
+    background-color: var(--pink);
+    color: var(--purple);
     padding: 0.8rem 2rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
+    font-family: var(--btn);
     border: 3px solid transparent;
     transition: background-color ease 0.5s;
     transition: border ease ease 0.5s;
@@ -137,24 +163,89 @@ header {
 
 .btn1:hover {
     background-color: transparent;
-    border: 3px double var(--ltblue);
+    border: 3px double var(--pink);
 }
 
 .btn2 {
     display: inline-block;
     background-color: transparent;
-    color: var(--dkyellow);
+    color: var(--purple);
     padding: 0.8rem 2rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    border: 3px double #eecffe;
+    font-family: var(--btn);
+    border: 3px double var(--pink);
     transition: background-color ease 0.5s;
     transition: border ease 0.5s;
 }
 
 .btn2:hover {
-    background-color: #eecffe; /* use this for all buttons */
+    background-color: var(--pink); /* use this for all buttons */
     border: 3px double transparent;
+}
+
+/* CIA Section */
+
+#cia {
+    background-color: var(--purple);
+}
+
+#cia h2 {
+    color: var(--dkyellow);
+}
+
+#cia h4 {
+    color: var(--yellow);
+}
+
+#cia p {
+    color: var(--pink);
+    font-weight: 600;
+}
+
+#cia .card p {
+    color: var(--pink);
+}
+
+.grid {
+display: flex;
+flex-wrap: wrap;
+gap: 1.5rem;
+margin-top: 1.5rem;
+justify-content: space-between;
+margin: 2rem;
+}
+
+.card {
+flex: 1 1 220px;
+background: var(--ltpurple);
+border: 2px solid var(--purple-blue);
+border-top: 5px solid var(--lavender-shadow);
+border-radius: 6px;
+padding: 1.5rem;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+margin: ;
+}
+
+.card h3,
+.card h5 {
+color: var(--dkyellow);
+margin-bottom: 0.75rem;
+}
+
+.card ul {
+padding-left: 1.2rem;
+}
+
+.card li {
+margin-bottom: 0.4rem;
+font-size: 0.95rem;
+}
+
+.highlight {
+    background-color: rgba(153, 102, 204, 0.60);
+    padding: 0.35rem 0.5rem;
+    border-left: 3px dotted var(--lavender-shadow);
 }
