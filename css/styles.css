@@ -286,6 +286,7 @@ header {
     background-color: var(--blue);
     padding: 1rem;
     margin: 0;
+    border-top: 2rem double var(--green);
 }
 
 #cia h2 {
@@ -318,6 +319,7 @@ header {
     background-color: var(--dkgrey);
     margin: 0;
     padding: 1rem;
+    border-top: 2rem double var(--green);
 } 
 
 #ds h2 {
@@ -344,6 +346,7 @@ header {
     background-color: var(--blue);
     padding: 1rem;
     margin: 0;
+    border-top: 2rem double var(--green);
 }
 
 #aaa h2 {
