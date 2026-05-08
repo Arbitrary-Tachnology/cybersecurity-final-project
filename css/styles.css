@@ -6,25 +6,14 @@
 
 :root {
     /* COLORS */
-    /*--purple: #7400b8;
-    --purple-blue: #6930c3;
-    --blue: #5e60ce;
-    --ltpurple: #9146ff;
-    --yellow: #ffe135;
-    --dkyellow: #ffda03;
-    --yellow2: #ff0;
-    --pink: #eecffe;
-    --dkpurple: #96c;
-    --lavender-shadow: #fba0e3;
-    --green: #225a2f;*/
-
     --purple: #6b54a0;
     --green: #a9d093;
     --dkgrey: #40464b;
     --blue: #225290;
     --ltblue: #aad3dd;
     --white: #e5e7e4;
-    --grey: #acb3aa;
+    --ltgrey: #acb3aa;
+    --grey: #676765;
     --yellow: #d0ac0f;
 
     /* FONTS */
@@ -58,7 +47,7 @@ header {
 .nav-logo {
     font-size: 1.4rem;
     font-weight: 800;
-    color: var(--ltblue);
+    color: var(--green);
     text-decoration: none;
     font-family: var(--logo);
 }
@@ -70,8 +59,8 @@ header {
 }
 
 .nav-links a {
-    background-color: var(--pink);
-    color: var(--blue);
+    background-color: var(--dkgrey);
+    color: var(--yellow);
     padding: 0.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -82,15 +71,15 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: var(--lavender-shadow);
+    background-color: var(--grey);
 }
 
 #hero {
-    background-image: url(../images/images/cia2.png);
+    background-image: url(../images/images/threeGuardians2.png);
     background-size: auto 100%;
     background-position: center;
     min-height: 80vh;
-    font-family: ;
+    font-family: var(--everything-else);
     overflow: hidden;
     position: relative;
     display: flex;
@@ -104,7 +93,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(153, 102, 204, 0.35)
+    background: rgba(170, 211, 221, 0.50)
 }
 
 .hero-content {
@@ -115,10 +104,10 @@ header {
 }
 
 .sub-text {
-    background-color: var(--purple-blue);
+    background-color: var(--blue);
     max-width: 25rem;
     border-radius: 0.75rem;
-    color: var(--yellow);
+    color: var(--green);
     text-align: center;
     font-size: 1.15rem;
     font-weight: 500;
@@ -132,15 +121,16 @@ header {
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     background-color: var(--blue);
-    color: var(--yellow);
+    color: var(--green);
     font-family: var(--h1-3);
+    border-radius: 1rem;
 }
 
 .intro-text {
     font-size: 1.4rem;
-    color: var(--yellow);
+    color: var(--green);
     margin-bottom: 1.5rem;
-    background-color: var(--purple-blue);
+    background-color: var(--blue);
     padding: 0.3rem;
     font-weight: 450;
     font-family: var(--p);
@@ -148,52 +138,159 @@ header {
 
 .btn1 {
     display: inline-block;
-    background-color: var(--pink);
-    color: var(--purple);
+    background-color: var(--purple);
+    color: var(--white);
     padding: 0.8rem 2rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
     font-family: var(--btn);
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     transition: background-color ease 0.5s;
     transition: border ease ease 0.5s;
 }
 
 .btn1:hover {
     background-color: transparent;
-    border: 3px double var(--pink);
+    border: 5px solid var(--purple);
 }
 
 .btn2 {
     display: inline-block;
     background-color: transparent;
-    color: var(--purple);
+    color: var(--white);
     padding: 0.8rem 2rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
     font-family: var(--btn);
-    border: 3px double var(--pink);
-    transition: background-color ease 0.5s;
+    border: 5px solid var(--purple);
     transition: border ease 0.5s;
+    transition: background-color ease 0.5s;
 }
 
 .btn2:hover {
-    background-color: var(--pink); /* use this for all buttons */
-    border: 3px double transparent;
+    background-color: var(--purple); /* use this for all buttons */
+    border: 5px double transparent;
+}
+
+.odd-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.odd-card {
+    flex: 1 1 220px;
+    background: var(--ltblue);
+    border: 2px solid var(--dkgrey);
+    border-top: 7px solid var(--dkgrey);
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    min-height: 20rem;
+    font-size: 1.15rem;
+}
+
+.odd-card h3,
+.odd-card h5 {
+    color: var(--purple);
+    margin-bottom: 0.75rem;
+    font-family: var(--h1-3);
+}
+
+.odd-card ul {
+    padding-left: 1.2rem;
+}
+
+.odd-card li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    font-family: var(--logo);
+}
+
+.odd-foot {
+    background-color: var(--dkgrey);
+    padding: 0.7rem 0.5rem;
+    border: 2px dashed var(--green);
+    border-radius: 0.5rem;
+    margin: 1rem 5rem;
+}
+
+.even-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.even-card {
+    flex: 1 1 220px;
+    background: var(--ltgrey);
+    border: 2px solid var(--blue);
+    border-top: 7px solid var(--blue);
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    min-height: 10rem;
+    font-size: 1.15rem;
+}
+
+.even-card h3,
+.even-card h5 {
+    color: var(--purple);
+    margin-bottom: 0.75rem;
+    font-family: var(--h1-3);
+}
+
+.even-card h5 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.even-card ul {
+    padding-left: 1.2rem;
+}
+
+.even-card li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    font-family: var(--logo);
+}
+
+.even-foot {
+    background-color: var(--blue);
+    padding: 0.7rem 0.5rem;
+    border: 2px dashed var(--green);
+    border-radius: 0.5rem;
+    margin: 1rem 5rem;
+}
+
+.emoji {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--purple);
+    padding: 0.25rem;
 }
 
 /* CIA Section */
 
 #cia {
-    background-color: var(--purple);
+    background-color: var(--blue);
+    padding: 1rem;
+    margin: 0;
 }
 
 #cia h2 {
-    color: var(--dkyellow);
+    color: var(--green);
+    font-family: var(--h1-3);
 }
 
 #cia h4 {
@@ -201,51 +298,78 @@ header {
 }
 
 #cia p {
-    color: var(--pink);
-    font-weight: 600;
+    color: var(--yellow);
+    font-weight: 500;
+    font-family: var(--subtext);
 }
 
-#cia .card p {
-    color: var(--pink);
-}
-
-.grid {
-display: flex;
-flex-wrap: wrap;
-gap: 1.5rem;
-margin-top: 1.5rem;
-justify-content: space-between;
-margin: 2rem;
-}
-
-.card {
-flex: 1 1 220px;
-background: var(--ltpurple);
-border: 2px solid var(--purple-blue);
-border-top: 5px solid var(--lavender-shadow);
-border-radius: 6px;
-padding: 1.5rem;
-box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-margin: ;
-}
-
-.card h3,
-.card h5 {
-color: var(--dkyellow);
-margin-bottom: 0.75rem;
-}
-
-.card ul {
-padding-left: 1.2rem;
-}
-
-.card li {
-margin-bottom: 0.4rem;
-font-size: 0.95rem;
+#cia .odd-card p {
+    color: var(--blue);
 }
 
 .highlight {
     background-color: rgba(153, 102, 204, 0.60);
     padding: 0.35rem 0.5rem;
-    border-left: 3px dotted var(--lavender-shadow);
+    border-left: 3px dotted var(--purple);
 }
+
+/*Data States Section*/
+#ds {
+    background-color: var(--dkgrey);
+    margin: 0;
+    padding: 1rem;
+} 
+
+#ds h2 {
+    color: var(--green);
+    font-family: var(--h1-3);
+}
+
+#ds h4 {
+    color: var(--yellow);
+}
+
+#ds p {
+    color: var(--yellow);
+    font-weight: 500;
+    font-family: var(--subtext);
+}
+
+#ds .even-card p {
+    color: var(--blue);
+}
+
+/*AAA Section*/
+#aaa {
+    background-color: var(--blue);
+    padding: 1rem;
+    margin: 0;
+}
+
+#aaa h2 {
+    color: var(--green);
+    font-family: var(--h1-3);
+}
+
+#aaa h4 {
+    color: var(--yellow);
+}
+
+#aaa p {
+    color: var(--yellow);
+    font-weight: 500;
+    font-family: var(--subtext);
+}
+
+#aaa .odd-card p {
+    color: var(--blue);
+}
+
+#aaa h3 {
+    font-size: 2rem;
+}
+
+#aaa h5 {
+    font-size: 1.125rem;
+}
+
