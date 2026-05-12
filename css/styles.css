@@ -421,31 +421,114 @@ header {
     display: inline;
 }
 
-.skills-table {
+.pass-table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: var(--spacing-md);
+    border-radius: 10rem;
+    
 }
 
-.skills-table th,
-.skills-table td {
+.pass-table th,
+.pass-table td {
     padding: 0.6rem 1rem;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-.skills-table th {
-    background-color: var(--color-dark);
-    color: var(--color-gold);
+.pass-table th {
+    background-color: navy;
+    color: var(--green);
+    font-family: var(--h1-3);
     font-weight: 600;
 }
 
-.skills-table tr:nth-child(even) {
-    background-color: var(--color-ltblue);
-    color: var(--color-white);
+.pass-table tr:nth-child(even) {
+    background-color: var(--blue);
+    color: var(--white);
 }
 
-.skills-table tr:hover {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+.pass-table tr:nth-child(odd) {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.pass-table td:hover {
+    background-color: var(--purple);
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+.skills-table tr {
+    font-family: var(--p);
+ }
+
+ .table-top th {
+    background-color: var(--purple);
+    color: var(--green);
+ }
+
+ #skills .inlinepred p{
+    display: inline;
+    color: red;
+}
+
+#skills .inlinepgreen p{
+    display: inline;
+    color: green;
+}
+
+.td-red {
+    color: red;
+}
+
+.td-orange {
+    color: darkorange;
+}
+
+.td-yellow {
+    color: yellow;
+}
+
+.td-ltgreen {
+    color: lightgreen;
+}
+
+.td-green {
+    color: #8db600;
+}
+
+/* hash section */
+
+#h {
+    background-color: var(--blue);
+    margin: 0;
+    padding: 1rem;
+    border-top: 2rem double var(--green);
+} 
+
+#h h2 {
+    color: var(--green);
+    font-family: var(--h1-3);
+}
+
+#h h4 {
+    color: var(--yellow);
+}
+
+#h p {
+    color: var(--yellow);
+    font-weight: 500;
+    font-family: var(--subtext);
+}
+
+#h .odd-card p {
+    color: var(--blue);
+}
+
+#h h3 {
+    font-size: 2rem;
+}
+
+#h h5 {
+    font-size: 1.125rem;
 }

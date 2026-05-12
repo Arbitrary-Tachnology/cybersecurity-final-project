@@ -16,7 +16,7 @@
                 <li><a href="#aaa">Auth (AAA)</a></li>
                 <li><a href="#p">Passwords</a></li>
                 <li><a href="#h">Hashing</a></li>
-                <li><a href="a#m">Auth Methods</a></li>
+                <li><a href="#am">Auth Methods</a></li>
                 <li><a href="#c">Contact</a></li>
             </ul>
         </nav>
@@ -185,63 +185,115 @@
         </div>
 
         <section id="skills">
-<h2 class="section-title">My Skills at a Glance</h2>
-<p class="section-subtitle">Technologies and tools I can use</p>
-    <table class="skills-table">
+<h2>How Long to Brute Force Your Pasword</h2>
+<p>Estimated crack time based on password length and character types used</p> 
+<div class="inlinepred"><p>Red = cracked intsantly</p></div>
+<div class="inlinepgreen"><p>Green = extremely safe</p></div>
+    <table class="pass-table">
         <thead>
-            <tr>
-                <th>Skill / Tool</th>
-                <th>Category</th>
-                <th>Proficiency Level</th>
-                <th>How I Used It</th>
+            <tr class="table-top">
+                <th colspan="3">Estimated Brute Force Crack Time By Password Length &amp; Character Set</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-            <td>HTML5</td>
-                <td>Web Development</td>
-                <td>Intermediate</td>
-                <td>Built structured, semantic web pages all year</td>
+                <th># CHARS</th>
+                <th>Numbers Only (0-9)</th>
+                <th>Lowercas Only (a-z)</th>
+                <th>Upper &amp; Lower (a-z, A-Z)</th>
+                <th>Numbers + Mixed Case <br> (a-z, A-Z, 0-9)</th>
+                <th>Numbers + Mixed + Symbols</th>
             </tr>
             <tr>
-                <td>CSS3 / Flexbox / Grid</td>
-                <td>Web Development</td>
-                <td>Intermediate</td>
-                <td>Styled responsive layouts including this portfolio</td>
+                <td>4</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
             </tr>
             <tr>
-                <td>JavaScript</td>
-                <td>Programming</td>
-                <td>Beginner–Intermediate</td>
-                <td>DOM manipulation, events, interactive apps</td>
+                <td>6</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-orange">1 sec</td>
+                <td class="td-orange">5 sec</td>
             </tr>
             <tr>
-                <td>GitHub / Git</td>
-                <td>Version Control</td>
-                <td>Beginner</td>
-                <td>Committed code and deployed projects via GitHub Pages</td>
+                <td>7</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-orange">25 sec</td>
+                <td class="td-orange">1 min</td>
+                <td class="td-orange">6 min</td>
             </tr>
             <tr>
-                <td>GitHub Codespaces</td>
-                <td>Development Tools</td>
-                <td>Intermediate</td>
-                <td>Primary coding environment all year</td>
+                <td>8</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-orange">5 sec</td>
+                <td class="td-orange">22 min</td>
+                <td class="td-orange">1 hour</td>
+                <td class="td-yellow">8 hours</td>
             </tr>
             <tr>
-                <td>Adobe Photoshop</td>
-                <td>Design / Media</td>
-                <td>Beginner</td>
-                <td>Optimized images for web use</td>
+                <td>9</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-orange">2 min</td>
+                <td class="td-yellow">19 hours</td>
+                <td class="td-yellow">3 days</td>
+                <td class="td-yellow">3 weeks</td>
             </tr>
             <tr>
-                <td>jQuery</td>
-                <td>JavaScript Library</td>
-                <td>Beginner</td>
-                <td>Added animations and simplified DOM manipulation</td>
+                <td>10</td>
+                <td class="td-red">Instantly</td>
+                <td class="td-orange">58 min</td>
+                <td class="td-yellow">1 month</td>
+                <td class="td-ltgreen">7 months</td>
+                <td class="td-ltgreen">5 years</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="td-orange">2 sec</td>
+                <td class="td-yellow">1 day</td>
+                <td class="td-ltgreen">5 years</td>
+                <td class="td-green">41 years</td>
+                <td class="td-green">400 years</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="td-orange">25 sec</td>
+                <td class="td-yellow">3 weeks</td>
+                <td class="td-green">300 years</td>
+                <td class="td-green">2,000 years</td>
+                <td class="td-green">34,000 years</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="td-yellow">6 hours</td>
+                <td class="td-green">1,000 years</td>
+                <td class="td-green">43 million years</td>
+                <td class="td-green">600 million years</td>
+                <td class="td-green">15 billion years</td>
+            </tr>
+            <tr>
+                <td>18+</td>
+                <td class="td-ltgreen">9 months</td>
+                <td class="td-green">23 million years</td>
+                <td class="td-green">6 trillion years</td>
+                <td class="td-green">100 trillion years</td>
+                <td class="td-green">7 quadrillion years</td>
             </tr>
         </tbody>
     </table>
         </section>
+    </section>
+
+    <!-- Hashing Section -->
+    <section id="h">
+        <h2>Password Hashing &amp; Salting</h2>
+        <h4>Password Storage</h4>
+        <p>Password are the most common - and most commonly attacked - form of authentication.</p>
     </section>
 </body>
 </html>
