@@ -532,3 +532,51 @@ header {
 #h h5 {
     font-size: 1.125rem;
 }
+
+.hash-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dkgrey);
+    border-radius: 0.25rem;
+    padding: 1rem 5rem;
+    margin-top: 1rem;
+    border: 2px double var(--green);
+}
+
+#h .hash-flex p {
+    color: var(--green);
+}
+
+#h .hash-step p {
+    color: var(--yellow);
+}
+
+.hash-step {
+    border: 3px dashed var(--ltgrey);
+    background-color: var(--grey);
+    padding: 1rem 1rem 0.7rem 1rem;
+    align-items: center; /* Centers items vertically */
+    border-radius: 0.2rem;
+    font-size: 1.25rem;
+}
+
+.hash-step2 {
+    border: 5px dotted var(--grey);
+    background-color: var(--ltgrey);
+    padding: 1rem 1rem 0.7rem 1em;
+    align-items: center; /* Centers items vertically */
+    border-radius: 0.2rem;
+    font-size: 1.25rem;
+}
+
+#h .hash-flex .hash-step2 p {
+    color: var(--purple);
+    font-weight: 600;
+}
+
+#h .hash-flex .arrow p {
+    font-size: 5rem;
+    color: var(--yellow);
+}
+

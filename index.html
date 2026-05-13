@@ -293,7 +293,94 @@
     <section id="h">
         <h2>Password Hashing &amp; Salting</h2>
         <h4>Password Storage</h4>
-        <p>Password are the most common - and most commonly attacked - form of authentication.</p>
+        <p>Password should <strong>never</strong> be stored as plain text. The most common safe storage method is <em>hashing</em> - a one-way mathmatical transformation.</p>
+
+
+        <section class="hash-flex">
+            <div>
+                <div class="hash-step">
+                    <p>Pa$$word123</p>
+                </div>
+                <div class="underflex-p">
+                    <p>Plain Text Password</p>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <p>&rarr;</p>
+            </div>
+
+            <div>
+                <div class="hash-step2">
+                    <p>SHA-256</p>
+                    <p>Algorithm</p>
+                </div>
+                <div class="underflex-p">
+                    <p>Hashing Function</p>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <p>&rarr;</p>
+            </div>
+
+            <div>
+                <div class="hash-step">
+                    <p>e52cac6741</p>
+                    <p>9a9a5f4dcc</p>
+                    <p>3b5aa765d6...</p>
+                </div>
+                <div class="underflex-p">
+                    <p>Stored Hash</p>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <p>&rarr;</p>
+            </div>
+
+            <div>
+                <div class="hash-step">
+                    <p>Hashes Match &#10003;</p>
+                    <br>
+                    <p>Access Granted</p>
+                </div>
+                <div class="underflex-p">
+                    <p>Login Comparison</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="odd-grid">
+                <div class="odd-card">
+                    <div class="emoji">&#56;&#65039;&#8419; &#x2935;&#xfe0f;</div>
+                    <h3>What is Hashing?</h3>
+                    <h5>One-Way Conversion</h5>
+                    <p>A mathematical function converts a password into a fixed-length string called a <em>hash</em>. It is one-way - the original password cannot be recovered from the hash alone. Common algorithms: MD5, SHA-256, SHA-512</p>
+                </div>
+
+                <div class="odd-card">
+                    <div class="emoji">&#127752;</div>
+                    <h3>Rainbow Tables</h3>
+                    <h5>Attack Method</h5>
+                    <p>A massive precomputed file of hashvalues for every possible password. Attackers look up a stolen hash to instantly find the matching password - no cracking required</p>
+                </div>
+
+                <div class="odd-card">
+                    <div class="emoji">&#129474;</div>
+                    <h3>Salting</h3>
+                    <h5>Defense Method</h5>
+                    <p>A unique random string (a salt) is added to each password before hashing. Even identical passwords produce different hashes, completely defeating rainbow table lookups.</p>
+                </div>
+
+                <div class="odd-card">
+                    <div class="emoji">&#128187;</div>
+                    <h3>Passing the Hash</h3>
+                    <h5>Asvanced Attack</h5>
+                    <p>The attacker steals the hash directly from storage (Windows SAM hive or Linux </p><div class="highlight2">/etc/shadow</div><p class="inlinep">) and uses it to authenticate - without ever knowing the original password.</p>
+                </div>
+            </div>
+            <p class="odd-foot"><strong>Where are password stored?</strong> On Windows: In the SAM registry hive. On Linux: in /etc/shadow (root access only). The older /etc/password file is world-readable and not safe for passwords.</p>
     </section>
 </body>
 </html>
