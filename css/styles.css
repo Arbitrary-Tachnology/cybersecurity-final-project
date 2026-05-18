@@ -580,3 +580,6 @@ header {
     color: var(--yellow);
 }
 
+#ds h5 {
+    text-align: left;
+}

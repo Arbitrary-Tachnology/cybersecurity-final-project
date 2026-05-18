@@ -350,7 +350,6 @@
                 </div>
             </div>
         </section>
-
         <div class="odd-grid">
                 <div class="odd-card">
                     <div class="emoji">&#56;&#65039;&#8419; &#x2935;&#xfe0f;</div>
@@ -381,6 +380,76 @@
                 </div>
             </div>
             <p class="odd-foot"><strong>Where are password stored?</strong> On Windows: In the SAM registry hive. On Linux: in /etc/shadow (root access only). The older /etc/password file is world-readable and not safe for passwords.</p>
+        </section>
+
+
+
+        <section id="ds">
+            <h2>Methods of Authentication</h2>
+            <h4>Beyond Passwords</h4>
+            <p>Modern security goes far beyond passwords. Here are the key authentication methods used in real-world systems - and how combining them creates much stronger.</p>
+            <div class="even-grid">
+
+                <div class="even-card">
+                    <div class="emoji">	&#128179;</div>
+                    <h3>Smart Cards</h3>
+                    <h5>Something You Have</h5>
+                    <p>Cards with embedded chip automatically recognized by an authentication device. Proximity readers can detect them in a pocket or purse without physical contact.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#127760;</div>
+                    <h3>Digital Certificates</h3>
+                    <h5>Something You Have</h5>
+                    <p>Servers are use certificates to authenticate with browsers (the &#128274; padlock in your address bar). Issued by trusted third-party Certificate Authorities (CAs)</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#128070;</div>
+                    <h3>Biometrics</h3>
+                    <h5>Something You Are</h5>
+                    <p>Uses measurable physical characteristics: fingerprint, retina scan, voice, or even typing speed. Disney World uses finger Biometrics for mulit-day pass verification.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">	&#128273;</div>
+                    <h3>Hardware Tokens (OTP)</h3>
+                    <h5>Something You Have</h5>
+                    <p>Information stored on hard drives, USB drives, DVDs, or memory — sitting still and not currently being moved or processed.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#128241;</div>
+                    <h3>Two-Factor Auth (2FA)</h3>
+                    <h5>Know + Have</h5>
+                    <p>Information stored on hard drives, USB drives, DVDs, or memory — sitting still and not currently being moved or processed.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#128737;</div>
+                    <h3>Multi-Factor Auth (MFA)</h3>
+                    <h5>Two or More Factors</h5>
+                    <p>Information stored on hard drives, USB drives, DVDs, or memory — sitting still and not currently being moved or processed.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#x1F517;</div>
+                    <h3>Single Sign-On</h3>
+                    <h5>One Login, Many Resources </h5>
+                    <p>Data actively moving from one system to another — through a network, the internet, or a local file share connection.</p>
+                </div>
+
+                <div class="even-card">
+                    <div class="emoji">&#128221;</div>
+                    <h3>Passphrases</h3>
+                    <h5>Something You Know</h5>
+                    <p>Data currently being processed by an application, held in active RAM, or being created/edited by a user right now.</p>
+                </div>
+
+            </div>
+
+            <p class="even-foot"><strong>Different tools protect different states:</strong> Encryption for data at rest secure protocols (HTTPS/TLS) for data in transit, and access controls &amp; authentication for data in use.</p>
+        </section>
     </section>
 </body>
 </html>
