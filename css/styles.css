@@ -583,3 +583,30 @@ header {
 #ds h5 {
     text-align: left;
 }
+
+a {
+    color: var(--green);
+    font-family: var(--logo);
+}
+
+.big-blue-box {
+    background-color: var(--purple);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px double var(--ltgrey);
+}
+
+.stop-sign {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#ds .big-blue-box .stop-sign .stop-sign-numbers h3 {
+    color: var(--ltblue);
+    margin-bottom: 0.5rem;
+}
+
+#ds .big-blue-box h2 {
+    margin-bottom: 3px;
+}
